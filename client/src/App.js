@@ -4,11 +4,17 @@ import Books from "./pages/Books";
 import Detail from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
+import LoginButton from "./components/Login"
+import LogoutButton from "./components/Logout"
+import Profile from "./components/Profile"
 
 function App() {
   return (
     <Router>
       <>
+      <LoginButton />
+      <LogoutButton />
+      <Profile />
         <Nav />
         <Switch>
           <Route exact path="/" component={Books} />
