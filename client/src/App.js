@@ -12,14 +12,14 @@ function App() {
   return (
     <Router>
       <>
-      <LoginButton />
-      <LogoutButton />
-      <Profile />
+        <LoginButton />
+        <LogoutButton />
+        <Profile />
         <Nav />
         <Switch>
           <Route exact path="/" component={Books} />
           <Route exact path="/books" component={Books} />
-          <Route exact path="/books/:id" component={Detail}/>
+          <Route exact path="/books/:id" component={Detail} />
           <Route component={NoMatch} />
         </Switch>
       </>
